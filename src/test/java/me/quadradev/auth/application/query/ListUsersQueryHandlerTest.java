@@ -1,5 +1,6 @@
 package me.quadradev.auth.application.query;
 
+import me.quadradev.auth.AbstractIntegrationTest;
 import me.quadradev.auth.application.query.user.ListUsersQuery;
 import me.quadradev.auth.application.query.user.ListUsersQueryHandler;
 import me.quadradev.auth.domain.user.User;
@@ -14,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @Transactional
-class ListUsersQueryHandlerTest {
+class ListUsersQueryHandlerTest extends AbstractIntegrationTest {
 
     @Autowired
     private ListUsersQueryHandler handler;

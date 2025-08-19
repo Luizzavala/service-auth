@@ -1,5 +1,6 @@
 package me.quadradev.auth.application.command;
 
+import me.quadradev.auth.AbstractIntegrationTest;
 import me.quadradev.auth.application.command.user.UpdateUserStatusCommand;
 import me.quadradev.auth.application.command.user.UpdateUserStatusCommandHandler;
 import me.quadradev.auth.common.error.ResourceNotFoundException;
@@ -14,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @Transactional
-class UpdateUserStatusCommandHandlerTest {
+class UpdateUserStatusCommandHandlerTest extends AbstractIntegrationTest {
 
     @Autowired
     private UpdateUserStatusCommandHandler handler;

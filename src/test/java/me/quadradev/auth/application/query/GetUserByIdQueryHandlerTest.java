@@ -1,5 +1,6 @@
 package me.quadradev.auth.application.query;
 
+import me.quadradev.auth.AbstractIntegrationTest;
 import me.quadradev.auth.application.query.user.GetUserByIdQuery;
 import me.quadradev.auth.application.query.user.GetUserByIdQueryHandler;
 import me.quadradev.auth.common.error.ResourceNotFoundException;
@@ -14,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @Transactional
-class GetUserByIdQueryHandlerTest {
+class GetUserByIdQueryHandlerTest extends AbstractIntegrationTest {
 
     @Autowired
     private GetUserByIdQueryHandler handler;

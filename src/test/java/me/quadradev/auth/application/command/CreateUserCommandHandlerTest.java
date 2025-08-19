@@ -1,5 +1,6 @@
 package me.quadradev.auth.application.command;
 
+import me.quadradev.auth.AbstractIntegrationTest;
 import me.quadradev.auth.application.command.user.CreateUserCommand;
 import me.quadradev.auth.application.command.user.CreateUserCommandHandler;
 import me.quadradev.auth.domain.user.User;
@@ -14,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @Transactional
-class CreateUserCommandHandlerTest {
+class CreateUserCommandHandlerTest extends AbstractIntegrationTest {
 
     @Autowired
     private CreateUserCommandHandler handler;
