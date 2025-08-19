@@ -1,5 +1,6 @@
 package me.quadradev.auth.domain.user;
 
+import me.quadradev.auth.AbstractIntegrationTest;
 import me.quadradev.auth.config.AuditingConfig;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @DataJpaTest
 @Import(AuditingConfig.class)
-class UserRepositoryTest {
+class UserRepositoryTest extends AbstractIntegrationTest {
 
     @Autowired
     private UserRepository userRepository;

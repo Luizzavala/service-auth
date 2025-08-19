@@ -1,6 +1,7 @@
 package me.quadradev.auth.interfaces.auth;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import me.quadradev.auth.AbstractIntegrationTest;
 import me.quadradev.auth.interfaces.dto.AuthRequestDTO;
 import me.quadradev.auth.interfaces.dto.CreateUserDTO;
 import org.junit.jupiter.api.Test;
@@ -15,7 +16,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-class AuthControllerTest {
+class AuthControllerTest extends AbstractIntegrationTest {
 
     @Autowired
     private MockMvc mockMvc;
