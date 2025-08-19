@@ -18,13 +18,13 @@ Ajusta las credenciales de los archivos según tu entorno.
 ## Ejecución
 ```bash
 # Compilar y ejecutar pruebas
-mvn clean package
+./mvnw clean package
 
 # Ejecutar con PostgreSQL
-mvn spring-boot:run -Dspring-boot.run.profiles=postgres
+./mvn spring-boot:run -Dspring-boot.run.profiles=postgres
 
 # Ejecutar con MySQL
-mvn spring-boot:run -Dspring-boot.run.profiles=mysql
+./mvnw spring-boot:run -Dspring-boot.run.profiles=mysql
 ```
 La API estará disponible en `http://localhost:8080`.
 
